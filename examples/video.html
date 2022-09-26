@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VIDEO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--
+    <section id="loading-screen">
+        <div id="loader">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+                <div class="rect6"></div>
+                <div class="rect7"></div>
+                <div class="rect8"></div>
+            </div>
+        </div>
+    </section>
+-->
+    <div id="logo">
+        <a href="../index.html">||||||||</a><br />
+    </div>
+
+
+    <div id="overlay">
+        <!--        <h1>Hellow World</h1>-->
+        <!--        <button id="startButton">Play</button>-->
+        <div class="warp">
+            <div class="blockquote">
+                <p id="q">This space-filling visualization, the Cartesian equivalent to a sunburst, shows the cumulative values of subtrees. It is commonly used to visualize software packages (the size of source code within nested packages) and file systems (the size of files within nested folders). See also the zoomable version.</p>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="scene"></canvas>
+
+    <video id="video" loop muted crossOrigin="anonymous" playsinline style="display:none">
+        <!--        <source src="textures/video/sintel.ogv" type='video/ogg; codecs="theora, vorbis"'>-->
+        <!--        <source src="textures/video/FluidSimulaionFun.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>-->
+        <source src="textures/video/all_edit.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <!--        <source src="textures/video/hit_5.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>-->
+    </video>
+
+    <div id="menu">
+        <ul class="sketchList">
+            <li><a href="nstar.html">NSTAR</a></li>
+            <li><a href="bauar.html">BAU-AR</a></li>
+            <li><a href="room.html">ROOM</a></li>
+            <li><a href="moon.html">MOON</a></li>
+            <li><a href="video.html" class="active">VIDEO</a></li>
+            <li><a href="scrollv1.html">SCROLL V1</a></li>
+            <li><a href="glsl_screen.html">GLSL SCREEN</a></li>
+            <li><a href="glsl_sphere.html">GLSL SPHERE</a></li>
+                        <li><a href="hdri_sphere.html">HDRI SPHERE</a></li>
+
+            <li><a href="glsl_box.html">GLSL BOX</a></li>
+            <li><a href="vr_gltf.html">VR + GLTF</a></li>
+            <li><a href="vr_glsl.html">VR + GLSL</a></li>
+        </ul>
+    </div>
+    <script type="module" src="app/video.js"></script>
+
+</body>
+
+</html>
